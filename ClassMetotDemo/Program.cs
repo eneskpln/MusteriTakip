@@ -35,13 +35,13 @@ namespace ClassMetotDemo
 
             Musteri[] customers = new Musteri[] {customer1, customer2, customer3, customer4 };
 
-            foreach (var dongu in customers)
-            {
-                Console.WriteLine("Müşteri Adı: " + dongu.Adi);
-                Console.WriteLine("Müşteri Soyadı: " + dongu.soyAdi);
-                Console.WriteLine("Müşteri ID: " + dongu.Id);
-                Console.WriteLine("*-------------------------*");
-            }
+            //foreach (var dongu in customers)
+            //{
+            //    Console.WriteLine("Müşteri Adı: " + dongu.Adi);
+            //    Console.WriteLine("Müşteri Soyadı: " + dongu.soyAdi);
+            //    Console.WriteLine("Müşteri ID: " + dongu.Id);
+            //    Console.WriteLine("*-------------------------*");
+            //}
 
             //Müşteri silme ve ekleme fonksiyonları ise aşağıdaki gibidir.
             Console.WriteLine("Ekleme İşlemleri");
@@ -51,13 +51,22 @@ namespace ClassMetotDemo
             musteriManager.Ekle(customer3);
             musteriManager.Ekle(customer4);
 
+            Console.WriteLine("--------------");
             Console.WriteLine("Silme İşlemleri");
 
             MusteriManager musterimanager = new MusteriManager();
             musterimanager.Silme(customer1);
             musterimanager.Silme(customer2);
             musterimanager.Silme(customer3);
-            musterimanager.Silme(customer4);    
+            musterimanager.Silme(customer4);
+
+            Console.WriteLine("--------------");
+            Console.WriteLine("Listeleme İşlemleri");
+            MusteriManager musteriyonetme = new MusteriManager();
+            musteriyonetme.Listele(customer1);
+            musteriyonetme.Listele(customer1);
+            musteriyonetme.Listele(customer1);
+            musteriyonetme.Listele(customer1);
 
 
 

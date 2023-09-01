@@ -19,5 +19,10 @@ namespace ClassMetotDemo
         {
             Console.WriteLine("Silinen Müşteri: " + dongu.Adi + " " + dongu.soyAdi);
         }
+
+        public void Listele(Musteri dongu)
+        {
+            Console.WriteLine("Adı: " + dongu.Adi + " " + "Soyadı: " + dongu.soyAdi + " " + "ID: " + dongu.Id);
+        }
     }
 }
